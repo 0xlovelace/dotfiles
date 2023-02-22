@@ -80,6 +80,18 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Screenshot Keybinds
+
+# Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+# Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -123,8 +135,8 @@ bindsym $mod+a focus parent
 set $ws1 "1: Terminal"
 set $ws2 "2: Browser"
 set $ws3 "3: Social"
-set $ws4 "4: Other"
-set $ws5 "5"
+set $ws4 "4: Finder"
+set $ws5 "5: VM"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
