@@ -177,21 +177,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -202,10 +191,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Gaps Config
-gaps inner 5
-gaps outer 5
+gaps inner 20
+gaps outer 20
 #smart_gaps on
 
 # Window Title bar
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 8
+default_floating_border pixel 8
+
+# Client Colors: border bg text indicator child_border
+client.focused #5b6feb #5b6feb #ffffff #5b6feb #5b6feb
+client.focused_inactive #5b6feb #282A2E #5b6feb #5b6feb #5b6feb
+client.unfocused #C5C8C6 #282A2E #ffffff #000000 #C5C8C6
+client.urgent #C5C8C6 #ffffff #000000 #000000 #C5C8C6
