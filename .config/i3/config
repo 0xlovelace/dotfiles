@@ -39,8 +39,8 @@ bindsym $mod+$alt+l exec --no-startup-id i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Wallpaper
-exec --no-startup-id nitrogen --set-auto ~/Pictures/space-pug.jpg --head=0 
-exec --no-startup-id nitrogen --set-auto ~/Pictures/water-pug.jpg --head=1 
+exec --no-startup-id nitrogen --set-auto ~/Pictures/space-pug.jpg --head=0
+exec --no-startup-id nitrogen --set-auto ~/Pictures/space-pug.jpg --head=1
 
 # Polybar
 exec --no-startup-id polybar
