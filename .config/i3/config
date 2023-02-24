@@ -63,7 +63,7 @@ tiling_drag modifier titlebar
 bindsym $mod+t exec kitty
 
 # start file finder
-bindsym $mod+f exec nautilus
+bindsym $mod+f exec thunar
 
 # start a browser
 bindsym $mod+b exec google-chrome-stable
@@ -137,7 +137,7 @@ set $ws2 "2: Browser"
 set $ws3 "3: Social"
 set $ws4 "4: Finder"
 set $ws5 "5: VM"
-set $ws6 "6"
+set $ws6 "6: OBS"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
