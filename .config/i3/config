@@ -135,7 +135,7 @@ bindsym $mod+a focus parent
 set $ws1 "1: Code"
 set $ws2 "2: Browser"
 set $ws3 "3: Social"
-set $ws4 "4: Finder"
+set $ws4 "4: Other"
 set $ws5 "5: VM"
 set $ws6 "6: OBS"
 set $ws7 "7"
@@ -191,13 +191,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Gaps Config
-gaps inner 20
-gaps outer 20
+gaps inner 30
+gaps outer 5
 #smart_gaps on
 
 # Window Title bar
-default_border pixel 8
-default_floating_border pixel 8
+default_border pixel 5
+default_floating_border pixel 5
 
 # Client Colors: border bg text indicator child_border
 client.focused #5b6feb #5b6feb #ffffff #5b6feb #5b6feb
