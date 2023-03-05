@@ -34,6 +34,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # keybind to lock screen
 bindsym $mod+$alt+l exec --no-startup-id i3lock --nofork
 
+# display settings 
+exec --no-startup-id xrandr --output eDP-1 -r 60 --mode 1920x1080
+exec --no-startup-id xrandr --output HDMI-1 -r 60 --mode 1920x1080
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
