@@ -99,10 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Basic Terminal Shortcuts
 alias vi="nvim"
 alias cls="clear; ls"
 alias clr="clear"
 
+# Git shortcuts
 alias gst="git status"
 alias ga="git add"
 alias gr="git restore"
@@ -115,16 +118,19 @@ alias gcan="git commit --amend --no-edit"
 alias glg="git log --oneline"
 alias glgm="git log"
 
+# openSUSE zypper shortcuts
 alias zypi="sudo zypper install"
 alias zypr="sudo zypper remove"
 alias zypru="sudo zypper remove -u"
 alias zypu="sudo zypper update"
 alias zyps="sudo zypper search"
 
-alias tma="tmux attach -t"
-alias tmn="tmux new -s"
+# tmux shortcuts
+alias tma='tmux attach -t'
+alias tmn='tmux new -s'
+alias tml='tmux ls'
 
-# Dotfiles Alias for git
+# Dotfiles Git shortcuts
 alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cfgst='cfg status'
 alias cfgc='cfg commit -m'
