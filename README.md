@@ -15,6 +15,7 @@
 ```bash
 git clone --bare git@github.com:nomadicpickle/dotfiles.git $HOME/.cfg
 cd ~/.cfg
-git config --git-dir=$HOME/.cfg --work-tree=$HOME --local status.showUntrackedFiles no
-git checkout --git-dir=$HOME/.cfg --work-tree=$HOME
+git --git-dir=$HOME/.cfg --work-tree=$HOME config --local status.showUntrackedFiles no
+git --git-dir=$HOME/.cfg --work-tree=$HOME checkout
+source ~/.zshrc
 ```
