@@ -104,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias cls="clear; ls"
 alias clr="clear"
+alias clst="clear; git status"
 
 # Git shortcuts
 alias gst="git status"
