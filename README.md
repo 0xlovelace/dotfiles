@@ -1,12 +1,4 @@
-# Nomadic Pickle's Config Files
-
-## Prerequisites 
-### Tools 
-
-- zsh
-- ohmyzsh
-- powerlevel10k
-- Patched Nerd Font (Fira Code Nerd Font)
+# Noah Pickle's Config Files
 
 ## Install
 
